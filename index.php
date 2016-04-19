@@ -41,10 +41,15 @@ $estatesales = highlight2($estatesales, 'nikkor', 'pink');
 $estatesales = highlight2($estatesales, 'canon', 'pink');
 $estatesales = highlight2($estatesales, 'leica', 'pink');
 $estatesales = highlight2($estatesales, 'yashica', 'pink');
+$estatesales = highlight2($estatesales, 'kodak', 'pink');
 $estatesales = highlight2($estatesales, 'lens', 'pink');
 $estatesales = highlight2($estatesales, 'microscope', 'pink');
 $estatesales = highlight2($estatesales, 'guitar', 'orange');
 $estatesales = highlight2($estatesales, 'instrument', 'orange');
+$estatesales = highlight2($estatesales, 'friday', 'yellow');
+$estatesales = highlight2($estatesales, 'lab ', 'pink');
+$estatesales = highlight2($estatesales, 'film ', 'pink');
+$estatesales = highlight2($estatesales, 'super 8 ', 'pink');
 
 $subcount = strtoupper($estatesales);
 
@@ -63,9 +68,14 @@ $subcount = strtoupper($estatesales);
     <li>Canon: <?= substr_count($subcount, strtoupper('canon')) ?></li>
     <li>Leica: <?= substr_count($subcount, strtoupper('leica')) ?></li>
     <li>Yashica: <?= substr_count($subcount, strtoupper('yashica')) ?></li>
+    <li>Kodak: <?= substr_count($subcount, strtoupper('kodak')) ?></li>
     <li>Leica: <?= substr_count($subcount, strtoupper('leica')) ?></li>
     <li>Lens: <?= substr_count($subcount, strtoupper('lens')) ?></li>
     <li>Microscope: <?= substr_count($subcount, strtoupper('microscope')) ?></li>
+    <li>Lab: <?= substr_count($subcount, strtoupper('lab ')) ?></li>
+    <li>Super 8: <?= substr_count($subcount, strtoupper('Super 8')) ?></li>
+    <li>Film: <?= substr_count($subcount, strtoupper('Film')) ?></li>
+    <li>Friday: <?= substr_count($subcount, strtoupper('Friday')) ?></li>
 </ul>
 <?
 //preg_replace($estatesales, '<SPAN style="BACKGROUND-COLOR: #ffff00"><b>$0</b></SPAN>', $text);
